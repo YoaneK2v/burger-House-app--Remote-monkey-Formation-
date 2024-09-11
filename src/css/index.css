@@ -5,6 +5,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
 body {
   font-family: "Roboto";
+  overflow-x: hidden;
+  @apply text-secondary;
+}
+p {
+  @apply mb-4;
 }
 .animate {
   -webkit-transition: all 0.2s ease-in-out;
