@@ -12,26 +12,30 @@ export default function Booking() {
         <img
           src={Burger}
           alt="Un hamberger"
-          className="absolute -top-20 -left-36 z-10"
+          className="hidden md:block absolute -top-20 -left-36 z-10"
         />
         <img
           src={Sauce}
           alt="une Sauce pimenté"
-          className="absolute bottom-0 left-0"
+          className="hidden lg:block absolute bottom-0 left-0"
         />
         <img
           src={Assiete}
           alt="une assiete burger frite"
-          className="absolute -bottom-52 -right-96"
+          className="hidden lg:block absolute -bottom-52 -right-96"
         />
-        <div className="max-w-3xl mx-auto px-10 py-20">
+        <div className="max-w-3xl mx-auto sm:px-10 md:py-20">
           <Heading variant="h3" alignement="center">
             Reservation
           </Heading>
-          <Heading alignement="center" theme="secondary" className="mt-5">
+          <Heading
+            alignement="center"
+            theme="secondary"
+            className="mt-5 text-center"
+          >
             Reservez votre table
           </Heading>
-          <form className="grid grid-cols-2 gap-x-7 gap-y-6 mt-20">
+          <form className="grid sm:grid-cols-2 gap-x-7 gap-y-6 mt-20">
             <div>
               <label htmlFor="name">Nom</label>
               <input
@@ -73,7 +77,7 @@ export default function Booking() {
             <div>
               <label htmlFor="customer">Nombre de personne</label>
               <input
-                type="text"
+                type="number"
                 name="customer"
                 id="customer"
                 className="focus:ring-primary focus:border-primary focus:border block w-full border-gray-400 rounded-md p-5"

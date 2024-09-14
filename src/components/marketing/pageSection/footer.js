@@ -11,14 +11,14 @@ import IconeWhatsapp from "../../../medias/svg/whatsapp-brands-solid.svg";
 export default function Footer() {
   return (
     <Container>
-      <div className="relative mb-20 p-5 text-white ">
+      <div className="relative lg:mb-20 p-5 text-white ">
         <img
           src={BackgroundImage}
           alt="plan de travail de cuisine ou l'on conocit un hamburger"
           className="bg-gray-800 absolute top-0 left-0 w-full h-full object-cover Z-0"
         />
-        <div className="relative  grid grid-cols-2 z-10">
-          <div className=" w-full p-5 mt-20 mb-28">
+        <div className="relative  grid md:grid-cols-2 z-10">
+          <div className=" w-full p-5 md:mt-20 mt-10 md:mb-28">
             {/* contenue left */}
             <img src={Logo} alt="le logo burger house" className="w-2/3" />
             <p className="mt-10">
@@ -27,17 +27,17 @@ export default function Footer() {
               quae. Similique.
             </p>
           </div>
-          <div className="h-full w-full flex flex-col items-center justify-center">
+          <div className="md:h-full w-full flex flex-col items-start md:items-center justify-center mb-10 md:mb-10 p-5">
             {/* contenue right */}
             <div className="flex  items-center">
-              <MapPinIcon className="h-10  w-10 mr-5" />
-              <span className="uppercase font-extrabold text-lg tracking-tighter">
+              <MapPinIcon className="h-7  w-6md:h-10  md:w-10 mr-5" />
+              <span className="uppercase font-semibold text-sm md:text-lg tracking-tighter">
                 15 place bellecour, 6900 lyon
               </span>
             </div>
             <div className="flex  items-center mt-5">
-              <EnvelopeIcon className="h-10  w-10 mr-5" />
-              <span className="uppercase font-extrabold text-lg tracking-tighter">
+              <EnvelopeIcon className="h-6 w-6 md:h-10  md:w-10 mr-5" />
+              <span className="uppercase font-semibold text-sm md:text-lg tracking-tighter">
                 info@burger-house.com
               </span>
             </div>

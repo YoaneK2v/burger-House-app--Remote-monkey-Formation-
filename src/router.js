@@ -7,7 +7,7 @@ export default function router() {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route exat path="/" element={<HomePage />} />
+          <Route exact path="/" element={<HomePage />} />
         </Routes>
       </BrowserRouter>
     </div>
